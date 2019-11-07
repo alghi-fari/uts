@@ -5,37 +5,32 @@ using namespace std;
 int main() {
     
     string nama;
-    int uts,uas,tugas,total,y;
-    awal :
-    cout << endl;
-    cout << endl;
-    cout << "Nama : ";
-    cin >> nama;
-    cout << "Nilai uts : ";
-    cin >> uts;
-    cout << "Nilai uas : ";
-    cin >> uas;
-    cout << "Nilai tugas : ";
-    cin >> tugas;
-    total = ((uts*30)/100)+((uas*40)/100)+((tugas*30)/100);
-    cout << "Nama : " << nama << endl;
-    cout << "Nilai akhir : " << total << endl;
-    if(total <70){
+    int uts,uas,tugas,total,i;
+    for (i=1; i<=20; i++){
+        cout << endl;
+        cout << endl;
+        cout << "Mahasiswa ke " << i <<endl;
+        cout << "Nama : ";
+        cin >> nama;
+        cout << "Nilai uts : ";
+        cin >> uts;
+        cout << "Nilai uas : ";
+        cin >> uas;
+        cout << "Nilai tugas : ";
+        cin >> tugas;
+        total = ((uts*30)/100)+((uas*40)/100)+((tugas*30)/100);
+        cout << endl;
+        cout << "Nama : " << nama << endl;
+        cout << "Nilai akhir : " << total << endl;
+        if(total <70){
         cout << "Indeks Nilai D";
-        cin >> y;
-        goto awal;
-    } else if(total >=70 and total < 80){
-        cout << "Indeks Nilai C";
-        cin >> y;
-        goto awal;
-    } else if(total >=80 and total < 90){
-        cout << "Indeks Nilai B";
-        cin >> y;
-        goto awal;
-    } else if(total >=90){
-        cout << "Indeks Nilai A";
-        cin >> y;
-        goto awal;
+        } else if(total >=70 and total < 80){
+            cout << "Indeks Nilai C";
+        } else if(total >=80 and total < 90){
+            cout << "Indeks Nilai B";
+        } else if(total >=90){
+            cout << "Indeks Nilai A";
+        }
     }
     
 }
