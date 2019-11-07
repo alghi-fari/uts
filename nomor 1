@@ -5,6 +5,7 @@ using namespace std;
 int main() {
     
     int n,i;
+    float rumus,jumlah,total;
     cout << "Masukkan jumlah n : ";
     cin >> n;
     for(i=0; i<=n; i++){
@@ -18,5 +19,16 @@ int main() {
             cout << "+1/" << i << " ";
         }
     }
+    //hitung
+    jumlah=0;
+    total=0;
+    rumus=-1;
+    for(int x=1; x<=n; x++){
+    rumus=(rumus*(-1));
+    total=rumus/x;
+    jumlah= jumlah + total;
+    }
+    cout <<endl;
+    cout << "Total jumlah : " << jumlah;
     
 }
